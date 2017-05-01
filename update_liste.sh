@@ -58,5 +58,4 @@ else
 	fi
 fi
 
-vim ./listeDeCourses.txt
 exit 0
