@@ -32,12 +32,6 @@ then
 	libelleProduit=`echo $infoProduit | jq '.product.generic_name_fr'`
 	imageProduit=`echo $infoProduit | jq '.product.image_ingredient_small_url'`
 	brands=`echo $infoProduit | jq '.product.brands'`
-
-
-	echo $ingredients
-	echo $libelleProduit
-	echo $imageProduit
-	echo $brands
 fi
 
 #Ajout du produit dans la liste de courses
@@ -50,7 +44,7 @@ then
 	fi
 else
 	quantitePrecedente=`echo $enregistrement | cut -d'|' -f2`
-	sed -i "/^${codeBarre}/d" $fichierCourses
+	sed -i ".bak" "/^${codeBarre}/d" $fichierCourses
 	quantite=`expr $quantite + $quantitePrecedente`
 	if [ $quantite -gt 0 ]
 	then
