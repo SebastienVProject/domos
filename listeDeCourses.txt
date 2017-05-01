@@ -1,3 +1,0 @@
-3228881011138|10|"thé vert aromatisé menthe"|"Lipton,Unilever"|"Thé vert, menthe (27%), arôme (13%)."|null
-3274080005003|16|"Eau de source naturelle"|"Cristaline"|"Eau de source."|null
-3179732370754|6|"Eau minérale naturelle"|"Hépar"|"Eau minérale naturelle"|null
